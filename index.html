@@ -206,103 +206,6 @@
       background: #050505;
     }
 
-    .bg-image {
-      position: absolute;
-      inset: 0;
-      z-index: -3;
-      background-position: center;
-      background-size: cover;
-      transform: scale(1.01);
-    }
-
-    .art-bg {
-      position: absolute;
-      inset: 0;
-      z-index: -3;
-      overflow: hidden;
-      background: #050505;
-    }
-
-    .art-bg::before,
-    .art-bg::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-    }
-
-    .art-launch {
-      background:
-        radial-gradient(circle at 21% 48%, rgba(245, 235, 220, .88) 0 5%, rgba(218, 182, 122, .52) 8%, transparent 25%),
-        radial-gradient(circle at 16% 34%, rgba(255,255,255,.72), transparent 17%),
-        radial-gradient(circle at 67% 51%, rgba(246, 182, 95, .34), transparent 11%),
-        linear-gradient(115deg, #1c2d33 0%, #65818a 40%, #a28a6d 55%, #111 100%);
-    }
-
-    .art-launch::before {
-      background:
-        linear-gradient(90deg, transparent 46.8%, rgba(245,245,238,.82) 47.1% 48.2%, rgba(20,20,20,.88) 48.5% 50.9%, rgba(240,240,232,.78) 51.2% 52%, transparent 52.4%),
-        linear-gradient(90deg, transparent 50.7%, rgba(0,0,0,.68) 50.8% 52.2%, transparent 52.4%),
-        repeating-linear-gradient(172deg, rgba(255,255,255,.08) 0 1px, transparent 1px 36px);
-      clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
-    }
-
-    .art-launch::after {
-      background:
-        radial-gradient(ellipse at 51% 70%, rgba(255,255,255,.82), rgba(255,128,55,.48) 8%, transparent 18%),
-        linear-gradient(155deg, transparent 0 45%, rgba(255,255,255,.16) 45.2% 46%, transparent 46.2%),
-        linear-gradient(25deg, transparent 0 56%, rgba(255,255,255,.12) 56.2% 57%, transparent 57.2%),
-        repeating-linear-gradient(170deg, rgba(255,255,255,.05) 0 1px, transparent 1px 26px);
-      opacity: .9;
-    }
-
-    .art-mars {
-      background:
-        radial-gradient(circle at 74% 48%, #bd6b42 0 18%, #6f3325 29%, transparent 42%),
-        radial-gradient(circle at 30% 30%, rgba(255,255,255,.12) 0 1px, transparent 2px),
-        radial-gradient(circle at 70% 18%, rgba(255,255,255,.1) 0 1px, transparent 2px),
-        linear-gradient(180deg, #030408, #0a1018 52%, #000);
-      background-size: cover, 230px 230px, 310px 310px, cover;
-    }
-
-    .art-tech {
-      background:
-        radial-gradient(circle at 72% 50%, rgba(190,205,214,.5), transparent 21%),
-        linear-gradient(90deg, transparent 58%, rgba(255,255,255,.4) 58.2% 60%, transparent 60.2%),
-        repeating-linear-gradient(65deg, transparent 0 28px, rgba(255,255,255,.08) 29px 31px, transparent 32px 58px),
-        linear-gradient(180deg, #111820, #394755 45%, #060606);
-    }
-
-    .art-service {
-      background:
-        radial-gradient(ellipse at 54% 72%, rgba(255,255,255,.8), rgba(255,160,72,.38) 9%, transparent 26%),
-        linear-gradient(90deg, transparent 31%, rgba(230,230,230,.92) 31.4% 32.8%, transparent 33.2%),
-        linear-gradient(180deg, #1b2228, #546170 44%, #1a1412 75%, #000);
-    }
-
-    .art-human {
-      background:
-        radial-gradient(circle at 70% 45%, rgba(120,170,210,.9) 0 18%, #26445f 31%, transparent 47%),
-        radial-gradient(circle at 36% 35%, rgba(255,255,255,.12) 0 1px, transparent 2px),
-        linear-gradient(180deg, #02050c, #08121c 62%, #000);
-      background-size: cover, 280px 280px, cover;
-    }
-
-    .art-network {
-      background:
-        radial-gradient(circle at 70% 36%, rgba(255,255,255,.86) 0 2px, transparent 3px),
-        radial-gradient(circle at 56% 48%, rgba(255,255,255,.72) 0 2px, transparent 3px),
-        radial-gradient(circle at 78% 58%, rgba(255,255,255,.66) 0 2px, transparent 3px),
-        linear-gradient(120deg, #02050b 0%, #102034 48%, #000 100%);
-    }
-
-    .art-network::after {
-      background:
-        linear-gradient(24deg, transparent 0 53%, rgba(255,255,255,.18) 53.1% 53.4%, transparent 53.5%),
-        linear-gradient(-18deg, transparent 0 55%, rgba(255,255,255,.16) 55.1% 55.4%, transparent 55.5%),
-        radial-gradient(ellipse at 50% 102%, rgba(60,120,180,.45), transparent 38%);
-    }
-
     .section-content {
       width: min(100%, 900px);
       padding: 0 0 132px 68px;
@@ -542,7 +445,7 @@
 
   <main id="top">
     <section class="section" aria-label="星舰飞行测试">
-      <div class="art-bg art-launch" aria-hidden="true"></div>
+      <img class="media" src="assets/banner-launch.svg" alt="" fetchpriority="high" decoding="async">
       <div class="section-content">
         <p class="date">2026年5月22日</p>
         <h1>小许火箭，宇宙争锋</h1>
@@ -555,7 +458,7 @@
     </section>
 
     <section class="section" id="multiplanetary" aria-label="反诈先锋-网站并不值得信任">
-      <div class="art-bg art-mars" aria-hidden="true"></div>
+      <img class="media" src="assets/banner-mars.svg" alt="" loading="lazy" decoding="async">
       <div class="section-content">
         <h1>反诈先锋-网站并不值得信任</h1>
         <p class="section-copy">如有侵权，立马就删。</p>
@@ -568,7 +471,7 @@
     </section>
 
     <section class="section" id="technology" aria-label="革新航天技术">
-      <div class="art-bg art-tech" aria-hidden="true"></div>
+      <img class="media" src="assets/banner-tech.svg" alt="" loading="lazy" decoding="async">
       <div class="section-content">
         <h1>革新航天技术</h1>
         <p class="section-copy">新一代飞船与重型火箭构成完全可重复使用的运输系统，可将人员与货物送往地球轨道、月球、火星以及更远的深空。</p>
@@ -581,7 +484,7 @@
     </section>
 
     <section class="section" id="launch-service" aria-label="发射服务">
-      <div class="art-bg art-service" aria-hidden="true"></div>
+      <img class="media" src="assets/banner-service.svg" alt="" loading="lazy" decoding="async">
       <div class="section-content">
         <h1>领先的发射服务能力</h1>
         <p class="section-copy">凭借可靠、可重复使用的火箭系统，小许火箭持续提升进入太空的效率，让发射任务更高频、更稳定、更经济。</p>
@@ -594,7 +497,7 @@
     </section>
 
     <section class="section" id="human-spaceflight" aria-label="载人航天">
-      <div class="art-bg art-human" aria-hidden="true"></div>
+      <img class="media" src="assets/banner-human.svg" alt="" loading="lazy" decoding="async">
       <div class="section-content">
         <h1>推进载人航天</h1>
         <p class="section-copy">从近地轨道到深空目的地，小许火箭正在推动一个全新时代，让更多人有机会亲身探索太空。</p>
@@ -607,7 +510,7 @@
     </section>
 
     <section class="section" id="satellite-network" aria-label="卫星网络">
-      <div class="art-bg art-network" aria-hidden="true"></div>
+      <img class="media" src="assets/banner-network.svg" alt="" loading="lazy" decoding="async">
       <div class="section-content">
         <h1>从太空传递高速网络</h1>
         <p class="section-copy">低轨卫星星座为全球用户提供稳定宽带网络，支持流媒体、在线游戏、视频通话以及更多高带宽应用。</p>

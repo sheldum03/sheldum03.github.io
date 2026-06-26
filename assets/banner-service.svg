@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Rocket prepared for launch at sunrise">
+  <defs>
+    <linearGradient id="sunrise" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071018"/>
+      <stop offset=".45" stop-color="#465b68"/>
+      <stop offset=".7" stop-color="#b37746"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".72" cy=".38" r=".34">
+      <stop offset="0" stop-color="#fff0c8" stop-opacity=".8"/>
+      <stop offset=".38" stop-color="#ffb35f" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sunrise)"/>
+  <rect width="1920" height="1080" fill="url(#sun)"/>
+  <path d="M0 706c290-70 520-78 780-28 314 60 610 58 1140-8v410H0Z" fill="#121316"/>
+  <path d="M1335 205c54-96 118-96 172 0v502c0 78-39 140-86 140s-86-62-86-140V205Z" fill="#efece3"/>
+  <path d="M1421 128c34 28 62 76 86 141h-172c24-65 52-113 86-141Z" fill="#fffaf0"/>
+  <path d="M1335 368h172v64h-172Z" fill="#202832"/>
+  <path d="M1315 670l-92 132h92V670Zm212 0 92 132h-92V670Z" fill="#b9b8b1"/>
+  <g stroke="#cfd5d8" stroke-opacity=".48" stroke-width="7" fill="none">
+    <path d="M1115 195v660M1168 235v620M1070 365h150M1062 530h170M1048 700h190"/>
+    <path d="M1168 235 1328 350M1168 450 1328 505M1168 650 1328 642"/>
+  </g>
+  <ellipse cx="1340" cy="850" rx="520" ry="120" fill="#e6eef0" opacity=".18"/>
+  <rect x="0" y="0" width="860" height="1080" fill="#000" opacity=".38"/>
+</svg>
